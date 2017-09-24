@@ -1,16 +1,16 @@
-package com.github.hronom.shitstorageservice;
+package com.github.hronom.shitstorageclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.integration.annotation.IntegrationComponentScan;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@IntegrationComponentScan
+@EnableZuulProxy
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ShitStorageServiceApplication {
+public class ShitStorageClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ShitStorageServiceApplication.class, args);
+        SpringApplication.run(ShitStorageClientApplication.class, args);
     }
 }

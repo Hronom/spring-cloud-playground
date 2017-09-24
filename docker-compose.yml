@@ -11,3 +11,17 @@ services:
       options:
         max-size: "250m"
         max-file: "10"
+
+  rabbitmq:
+    image: rabbitmq:3.6.12-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=root
+      - RABBITMQ_DEFAULT_PASS=12345
+    logging:
+      driver: json-file
+      options:
+        max-size: "250m"
+        max-file: "10"

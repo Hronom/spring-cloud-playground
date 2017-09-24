@@ -12,6 +12,7 @@
 
     <groupId>com.github.hronom</groupId>
     <artifactId>spring-cloud-playground</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
 
     <properties>
@@ -35,9 +36,10 @@
 
     <modules>
         <module>config-server</module>
-        <module>shit-storage-service</module>
         <module>eureka-service</module>
-        <module>shit-client</module>
+        <module>shit-storage-service</module>
+        <module>shit-storage-client</module>
+        <module>shit-storage-common</module>
     </modules>
 
 </project>
