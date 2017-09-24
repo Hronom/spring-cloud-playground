@@ -36,6 +36,8 @@
     <modules>
         <module>config-server</module>
         <module>shit-storage-service</module>
+        <module>eureka-service</module>
+        <module>shit-client</module>
     </modules>
 
 </project>
