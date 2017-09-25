@@ -40,6 +40,7 @@
         <module>shit-storage-service</module>
         <module>shit-storage-client</module>
         <module>shit-storage-common</module>
+        <module>zipkin-service</module>
     </modules>
 
 </project>
