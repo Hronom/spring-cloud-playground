@@ -1,4 +1,4 @@
-package com.github.hronom.usersservice;
+package com.github.hronom.streamsgroupservice;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

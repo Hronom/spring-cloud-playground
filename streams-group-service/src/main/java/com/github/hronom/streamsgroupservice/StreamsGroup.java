@@ -1,25 +1,21 @@
-package com.github.hronom.usersservice;
+package com.github.hronom.streamsgroupservice;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.annotation.Version;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 @Document
-public class User {
+public class StreamsGroup {
     @Id
     public String id;
 
-    public String username;
-    public String password;
-
-    public String email;
-
-    public String firstName;
-    public String lastName;
+    @Indexed
+    public String userId;
+    public String description;
 
     @Version
     public Long version;

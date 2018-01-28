@@ -63,6 +63,7 @@
         <module>shit-storage-common</module>
         <module>zipkin-service</module>
         <module>users-service</module>
+        <module>streams-group-service</module>
     </modules>
 
 </project>
