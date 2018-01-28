@@ -1,19 +1,21 @@
 version: '2'
 services:
-  mysql:
-    image: mysql:5.7.19
+  mongodb:
+    image: mongo:3.4.9
     ports:
-      - "3306:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=12345
-    logging:
-      driver: json-file
-      options:
-        max-size: "250m"
-        max-file: "10"
+      - "27017:27017"
+    volumes:
+      - /mongodb:/data/db
+
+  mongo-express:
+    image: mongo-express:0.42.2
+    ports:
+      - "8081:8081"
+    links:
+      - mongodb:mongo
 
   rabbitmq:
-    image: rabbitmq:3.6.12-management
+    image: rabbitmq:3.7.2-management
     ports:
       - "15672:15672"
       - "5672:5672"
